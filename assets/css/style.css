@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/*font-family: 'Poiret One', sans-serif;*/
+
+@font-face{
+    font-family: "led clock";
+    src: url('../fonte/ledsledital.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.relogio{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100vw;
+    height: 33vh;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.caixa{
+    height: 100%;
+    width: 20%;
+    max-width: 250px;
+    position: relative;
+}
+
+.caixa > span{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "led clock", sans-serif;
+    font-size: 10rem;
+    text-align: center;
+}
+.caixa > p{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    bottom: 2%;
+    font-size: 1.1rem;
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+}
