@@ -7,22 +7,62 @@
     <title>Time to study!</title>
     <link rel="shortcut icon" href="../imagem/clock.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
 </head>
 <body>
-    <main class="relogio">
+    <div class="relogio">
         <div class="caixa">
-            <span id="hora"></span>
+            <span id="hora">211</span>
             <p>hora(s)</p>
+        </div>
+        <div class="nada">
+            <span>:</span>
         </div>
         <div class="caixa">
             <span id="minuto"></span>
             <p>minuto(s)</p>
         </div>
+        <div class="nada">
+            <span>:</span>
+        </div>
         <div class="caixa">
             <span id="segundo"></span>
             <p>segundo(s)</p>
         </div>
-    </main>
+    </div>
+
+    <div class="crono-board">
+        <div class="cronometro">
+            <div class="caixa2">
+                <span id="cronoHr">00</span>
+            </div>
+            <div class="caixa2">
+                <span>:</span>
+            </div>
+            <div class="caixa2">
+                <span id="cronoMin">00</span>
+            </div>
+            <div class="caixa2">
+                <span>:</span>
+            </div>
+            <div class="caixa2">
+                <span id="cronoSeg">00</span>
+            </div>
+        </div>
+        <div class="controle">
+            <button id="iniciar">
+                INICIAR
+            </button>
+            <button id="pausar">
+                PAUSAR
+            </button>
+            <button id="continuar">
+                CONTINUAR
+            </button>
+            <button id="zerar">
+                ZERAR
+            </button>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+continuar com a incrementacão dos botões 'zerar' e 'continuar'.

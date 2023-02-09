@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 body{
@@ -45,9 +45,15 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "led clock", sans-serif;
-    font-size: 10rem;
+    font-size: 8.5rem;
     text-align: center;
 }
+
+.nada > span{
+    font-family: "led clock", sans-serif;
+    font-size: 8.5rem;
+}
+
 .caixa > p{
     position: absolute;
     height: 10%;
@@ -57,3 +63,67 @@ body{
     font-family: 'Poiret One', sans-serif;
     text-align: center;
 }
+
+.crono-board{
+    position: absolute;
+    bottom: 10vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.cronometro{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caixa2{
+    text-align: center;
+    width: 40px;
+}
+
+.caixa2 > span{
+    font-size: 1.4rem;
+    font-family: "led clock", sans-serif;
+}
+
+.controle{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.controle > button{
+    font-family: sans-serif;
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+
+#pausar{
+    display: none;
+}
+#continuar{
+    display: none;
+}
+#zerar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
