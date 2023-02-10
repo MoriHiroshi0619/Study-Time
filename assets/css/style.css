@@ -7,17 +7,28 @@
     src: url('../fonte/ledsledital.ttf') format('truetype');
 }
 
+:root{
+    --cor01: #026773;
+    --cor02: #026773;
+    --cor03: #026773;
+    --cor04: #024959;
+    --cor05: #012E40;
+    --corDestaque: #F2E3D5;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /*border: 1px solid red;*/
+    color: var(--corDestaque);
 }
 
 body{
     position: relative;
     height: 100vh;
     width: 100vw;
+    background-color: #026773;
 }
 
 .relogio{

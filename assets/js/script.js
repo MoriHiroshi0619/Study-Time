@@ -41,6 +41,8 @@ function cronometro(){
     iniciar.removeEventListener('click', cronometro);
     iniciar.style.display = 'none';
     pausar.style.display = 'block';
+    continuar.style.display = 'none';
+    zerar.style.display = 'none';
 
     function parar(){
         clearInterval(loop);
@@ -48,6 +50,21 @@ function cronometro(){
         continuar.style.display = 'block';
         zerar.style.display = 'block';
         console.log("apertado");
+
+        function reset(){
+            segundos = 0;
+            minutos = 0;
+            horas = 0;
+            cronoHr.innerText = '00';
+            cronoMin.innerText = '00';
+            cronoSeg.innerText = '00';
+            continuar.style.display = 'none';
+            zerar.style.display = 'none';
+            iniciar.style.display = 'block';
+            iniciar.addEventListener('click', cronometro);
+        }
+        continuar.addEventListener('click', cronometro);
+        zerar.addEventListener('click', reset);
     }
 
     const loop = setInterval(()=>{
@@ -84,11 +101,6 @@ function cronometro(){
     },1000);
     pausar.addEventListener('click', parar);
 } 
-
-function parar(){
-    clearInterval(loop);
-    console.log("apertado");
-}
 
 
 iniciar.addEventListener('click', cronometro);
