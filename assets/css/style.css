@@ -20,7 +20,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
     color: var(--corDestaque);
 }
 
@@ -35,10 +34,15 @@ body{
     display: flex;
     justify-content: space-evenly;
     position: absolute;
-    width: 100vw;
+    width: 90vw;
+    max-width: 1200px;
     height: 33vh;
     top: 50%;
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor05);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.607);
 }
 
 .caixa{
@@ -47,6 +51,7 @@ body{
     max-width: 250px;
     position: relative;
 }
+
 
 .caixa > span{
     position: absolute;
@@ -77,12 +82,16 @@ body{
 
 .crono-board{
     position: absolute;
-    bottom: 10vh;
+    bottom: 18vh;
     width: 300px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     left: 50%;
     transform: translate(-50%, 0);
+    background-color: var(--cor05);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.607);
 }
 
 .cronometro{
@@ -102,6 +111,7 @@ body{
 
 .controle{
     display: flex;
+    padding-top: 10px;
     justify-content: space-evenly;
 }
 
@@ -113,6 +123,13 @@ body{
     padding: 5px 10px;
     margin: 0px 5px;
     transition: 0.5s;
+    background-color: var(--cor01);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.controle > button:hover{
+    color: var(--cor05);
 }
 
 #pausar{
@@ -125,7 +142,38 @@ body{
     display: none;
 }
 
+@media (max-width: 570px){
+    .relogio{
+        top: 35%;
+    }
 
+    .crono-board{
+        bottom: 30vh;
+    }
+
+    .caixa{
+        height: 40%;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .caixa > p{
+        font-size: 0.9rem;
+    }
+    .nada{
+        position: relative;
+    }
+
+    .caixa > span{
+        font-size: 3.5rem;
+    }
+
+    .nada > span{
+        font-size: 4rem;
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+}
 
 
 
